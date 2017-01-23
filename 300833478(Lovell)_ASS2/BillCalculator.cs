@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +15,7 @@ namespace _300833478_Lovell__ASS2
     public partial class BillCalculator : Form
     {
         static List<ResturantMenu> MenuItems = new List<ResturantMenu>();
+        double Subtotal;
         public BillCalculator()
         {
             InitializeComponent();
@@ -34,6 +37,15 @@ namespace _300833478_Lovell__ASS2
                 {
                     case "Beverage":
                         BeverageCmbox.Items.Add(item.Name);
+                        break;
+                    case "Appetizer":
+                        AppetizerCmbB.Items.Add(item.Name);
+                        break;
+                    case "Dessert":
+                        DessertCmbB.Items.Add(item.Name);
+                        break;
+                    case "Main Course":
+                        MainCourseCmbB.Items.Add(item.Name);
                         break;
                     default:
                         break;
@@ -77,6 +89,43 @@ namespace _300833478_Lovell__ASS2
             MenuItems.Add(new ResturantMenu("Carrot Cake", "Dessert",5.95));
             MenuItems.Add(new ResturantMenu("Mud Pie", "Dessert",4.95));
             MenuItems.Add(new ResturantMenu("Apple Crisp", "Dessert",5.95));
+        }
+        /// <summary>
+        /// Opens link in browsers
+        /// </summary>
+        private void companylogolbl_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://fantasyburgers.azurewebsites.net/");
+        }
+        /// <summary>
+        /// Clear fields
+        /// </summary>
+        private void Clearbtn_Click(object sender, EventArgs e)
+        {
+            txtSubtotal.Text = "$0.00";
+            txtTax.Text = "$0.00";
+            txtTotal.Text = "$0.00";
+            Subtotal = 0;
+        }
+        /// <summary>
+        /// Gets selected and does calculations
+        /// </summary>
+        private void ItemSelected(object sender, EventArgs e)
+        {
+            ComboBox cmd = (ComboBox)sender;
+
+            var Selected=MenuItems.Find(x => x.Name.Contains(cmd.SelectedItem.ToString()));
+            double _price=Selected.Price;
+            Subtotal += _price;
+            txtSubtotal.Text = Subtotal.ToString("C", CultureInfo.CurrentCulture);
+            double _tax = (Subtotal*13)/100;
+            txtTax.Text = _tax.ToString("C", CultureInfo.CurrentCulture);
+            double _total = Subtotal + _tax;
+            txtTotal.Text = _total.ToString("C", CultureInfo.CurrentCulture);
+        }
+        private void Calculate(object sender, EventArgs e)
+        {
+          
         }
     }
 }

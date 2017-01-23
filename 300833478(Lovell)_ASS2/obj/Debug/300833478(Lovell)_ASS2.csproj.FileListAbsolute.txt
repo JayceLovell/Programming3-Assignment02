@@ -9,3 +9,12 @@ H:\Programming 3\Programming3-Assignment02\300833478(Lovell)_ASS2\300833478(Love
 H:\Programming 3\Programming3-Assignment02\300833478(Lovell)_ASS2\300833478(Lovell)_ASS2\obj\Debug\300833478(Lovell)_ASS2.exe
 H:\Programming 3\Programming3-Assignment02\300833478(Lovell)_ASS2\300833478(Lovell)_ASS2\obj\Debug\300833478(Lovell)_ASS2.pdb
 C:\Users\Waynell\Desktop\300833478(Lovell)_ASS2\300833478(Lovell)_ASS2\bin\Debug\300833478(Lovell)_ASS2.exe.config
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\bin\Debug\300833478(Lovell)_ASS2.exe.config
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\bin\Debug\300833478(Lovell)_ASS2.exe
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\bin\Debug\300833478(Lovell)_ASS2.pdb
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\obj\Debug\300833478(Lovell)_ASS2.csprojResolveAssemblyReference.cache
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\obj\Debug\_300833478_Lovell__ASS2.BillCalculator.resources
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\obj\Debug\_300833478_Lovell__ASS2.Properties.Resources.resources
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\obj\Debug\300833478(Lovell)_ASS2.csproj.GenerateResource.Cache
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\obj\Debug\300833478(Lovell)_ASS2.exe
+E:\OneDrive\Documents\Centennial Stuff\Programming 3\Assignment02\Programming3-Assignment02\300833478(Lovell)_ASS2\obj\Debug\300833478(Lovell)_ASS2.pdb
