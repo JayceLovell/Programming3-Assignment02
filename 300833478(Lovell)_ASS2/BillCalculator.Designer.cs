@@ -36,12 +36,16 @@
             this.Clearbtn = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.companylogolbl = new System.Windows.Forms.ToolStripStatusLabel();
+            this.labelusername = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblSubtotalTitle = new System.Windows.Forms.Label();
             this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.txtTax = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblTax = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.lbldivider = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.loginUserControl1 = new _300833478_Lovell__ASS2.LoginUserControl();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,10 +102,11 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.companylogolbl});
+            this.companylogolbl,
+            this.labelusername});
             this.statusStrip1.Location = new System.Drawing.Point(0, 349);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(606, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(818, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -111,6 +116,11 @@
             this.companylogolbl.Name = "companylogolbl";
             this.companylogolbl.Size = new System.Drawing.Size(16, 17);
             this.companylogolbl.Click += new System.EventHandler(this.companylogolbl_Click);
+            // 
+            // labelusername
+            // 
+            this.labelusername.Name = "labelusername";
+            this.labelusername.Size = new System.Drawing.Size(0, 17);
             // 
             // lblSubtotalTitle
             // 
@@ -163,12 +173,43 @@
             this.lblTotal.TabIndex = 11;
             this.lblTotal.Text = "Total";
             // 
+            // lbldivider
+            // 
+            this.lbldivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbldivider.Location = new System.Drawing.Point(605, 13);
+            this.lbldivider.Name = "lbldivider";
+            this.lbldivider.Size = new System.Drawing.Size(1, 337);
+            this.lbldivider.TabIndex = 13;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(674, 96);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 31);
+            this.btnLogin.TabIndex = 14;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // loginUserControl1
+            // 
+            this.loginUserControl1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.loginUserControl1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginUserControl1.Location = new System.Drawing.Point(609, 13);
+            this.loginUserControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.loginUserControl1.Name = "loginUserControl1";
+            this.loginUserControl1.Size = new System.Drawing.Size(220, 75);
+            this.loginUserControl1.TabIndex = 12;
+            // 
             // BillCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(606, 371);
+            this.ClientSize = new System.Drawing.Size(818, 371);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.lbldivider);
+            this.Controls.Add(this.loginUserControl1);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblTax);
             this.Controls.Add(this.txtTotal);
@@ -211,6 +252,10 @@
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblTax;
         private System.Windows.Forms.Label lblTotal;
+        private LoginUserControl loginUserControl1;
+        private System.Windows.Forms.ToolStripStatusLabel labelusername;
+        private System.Windows.Forms.Label lbldivider;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 

@@ -123,9 +123,11 @@ namespace _300833478_Lovell__ASS2
             double _total = Subtotal + _tax;
             txtTotal.Text = _total.ToString("C", CultureInfo.CurrentCulture);
         }
-        private void Calculate(object sender, EventArgs e)
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-          
+            labelusername.Text = "User: " + loginUserControl1.Username;
+            Size = new Size(620,Size.Height);
         }
     }
 }
